@@ -59,7 +59,7 @@ fun TaskItem(
       Column(modifier = Modifier.weight(1f)) {
         Text(text = task.title, style = MaterialTheme.typography.subtitle2)
         CompositionLocalProvider(LocalContentAlpha provides ContentAlpha.medium) {
-          Text(text = getDueDateAndTime(task), fontSize = 12.sp)
+          Text(text = task.subject, fontSize = 12.sp)
         }
       }
 

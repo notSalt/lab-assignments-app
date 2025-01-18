@@ -1,6 +1,6 @@
 <resources>
     <!-- Common -->
-    <string name="app_name">Make It So</string>
+    <string name="app_name">Assignment Tracker</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="repeat_password">Repeat password</string>
@@ -23,16 +23,17 @@
     <string name="password_match_error">Passwords do not match.</string>
 
     <!-- TasksScreen -->
-    <string name="tasks">Tasks</string>
+    <string name="tasks">Assignments</string>
 
     <!-- EditTaskScreen -->
-    <string name="edit_task">Edit your task</string>
+    <string name="edit_task">Edit your Assignments</string>
     <string name="title">Title</string>
     <string name="description">Description</string>
     <string name="url">URL</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="flag">Flag</string>
+    <string name="subject">Subject</string>
     <string name="priority">Priority</string>
 
     <!-- SettingsScreen -->
@@ -42,13 +43,13 @@
 
     <!-- StatsScreen -->
     <string name="stats">Statistics</string>
-    <string name="completed_tasks">Completed tasks</string>
-    <string name="important_completed_tasks">Important completed tasks \n (high priority or flagged)</string>
-    <string name="medium_high_tasks_to_complete">Medium and high priority tasks to complete</string>
+    <string name="completed_tasks">Completed Assignments</string>
+    <string name="important_completed_tasks">Important completed assignments \n (high priority or flagged)</string>
+    <string name="medium_high_tasks_to_complete">Medium and high priority assignments to complete</string>
 
     <!-- Dialogs -->
     <string name="sign_out_title">Sign out?</string>
-    <string name="sign_out_description">You will have to sign in again to see your tasks.</string>
+    <string name="sign_out_description">You will have to sign in again to see your assignments.</string>
     <string name="delete_account_title">Delete account?</string>
     <string name="delete_account_description">You will lose all your tasks and your account will be deleted. This action is irreversible.</string>
 

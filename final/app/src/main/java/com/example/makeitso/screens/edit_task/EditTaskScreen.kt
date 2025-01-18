@@ -60,6 +60,7 @@ fun EditTaskScreen(
     onTimeChange = viewModel::onTimeChange,
     onPriorityChange = viewModel::onPriorityChange,
     onFlagToggle = viewModel::onFlagToggle,
+    onSubjectChange = viewModel::onSubjectChange,
     activity = activity
   )
 }
@@ -77,6 +78,7 @@ fun EditTaskScreenContent(
   onTimeChange: (Int, Int) -> Unit,
   onPriorityChange: (String) -> Unit,
   onFlagToggle: (String) -> Unit,
+  onSubjectChange: (String) -> Unit,
   activity: AppCompatActivity?
 ) {
   Column(
@@ -98,6 +100,7 @@ fun EditTaskScreenContent(
     val fieldModifier = Modifier.fieldModifier()
     BasicField(AppText.title, task.title, onTitleChange, fieldModifier)
     BasicField(AppText.description, task.description, onDescriptionChange, fieldModifier)
+    BasicField(AppText.subject, task.subject, onSubjectChange, fieldModifier)
     BasicField(AppText.url, task.url, onUrlChange, fieldModifier)
 
     Spacer(modifier = Modifier.spacer())
@@ -184,6 +187,7 @@ fun EditTaskScreenPreview() {
       onTimeChange = { _, _ -> },
       onPriorityChange = { },
       onFlagToggle = { },
+      onSubjectChange = { },
       activity = null
     )
   }

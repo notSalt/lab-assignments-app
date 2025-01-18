@@ -91,6 +91,10 @@ class EditTaskViewModel @Inject constructor(
     }
   }
 
+  fun onSubjectChange(newValue: String) {
+    task.value = task.value.copy(subject = newValue)
+  }
+
   private fun Int.toClockPattern(): String {
     return if (this < 10) "0$this" else "$this"
   }
